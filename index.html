@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Márgen</title>
+</head>
+<body>
+    <h1>Simulador de Márgen</h1>
+    <div id="formulario">
+        <label for="nombreTienda">Nombre de la Tienda:</label>
+        <input type="text" id="nombreTienda"><br>
+
+        <label for="precioVenta">Precio de Venta Unitario:</label>
+        <input type="number" id="precioVenta"><br>
+
+        <label for="costoUnitario">Costo Unitario:</label>
+        <input type="number" id="costoUnitario"><br>
+
+        <label for="unidadesVendidas">Unidades Vendidas:</label>
+        <input type="number" id="unidadesVendidas"><br>
+
+        <label for="otrosGastos">Otros Gastos:</label>
+        <input type="number" id="otrosGastos"><br>
+
+        <button onclick="calcularYMostrarResultados()">Calcular</button>
+    </div>
+
+    <div id="resultados">
+        <h2>Resultados:</h2>
+        <pre id="resultadoTexto"></pre>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
